@@ -177,4 +177,4 @@ statsmodels
 
 # Notes
 
-The workflow was developed for **CALCA, CALCB, and CALCRL** but can be adapted t
+The workflow was developed for **CALCA, CALCB, and CALCRL** but can be adapted to other genes by modifying the Ensembl gene identifiers and input files.
