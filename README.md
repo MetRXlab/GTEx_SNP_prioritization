@@ -4,10 +4,15 @@ This repository contains the workflow used to retrieve, select, and characterize
 
 The pipeline consists of three main steps:
 
----------------------------------
+---
+
 ## 1. GTEx eQTL Retrieval (R)
-## 01_download_gtex_eqtls.R
----------------------------------
+
+**File:**
+
+```
+01_download_gtex_eqtls.R
+```
 This script retrieves significant tissue-specific eQTL associations from the **GTEx v8 database** using the `gtexr` R package.
 
 ### Main steps:
@@ -32,10 +37,16 @@ data/
 ```
 
 
----------------------------------
+---
+
 ## 2. SNP Selection and LD Clumping (Python)
-## 02_GTEx_SNP_selection.ipynb
----------------------------------
+
+**Notebook:**
+
+```
+02_GTEx_SNP_selection.ipynb
+```
+
 
 
 This notebook processes GTEx eQTL results and identifies independent regulatory variants.
@@ -68,10 +79,15 @@ This file contains the independent SNPs used for downstream tissue-specific anal
 The Sankey visualization provides an overview of how independent eQTL variants are distributed across tissues and their corresponding target genes.
 
 
----------------------------------
+---
+
 ## 3. Tissue-Specific eQTL Expression Profiles (Python)
-## 03_GTEx_SNP_Tissue_Profile_UPSet.ipynb
----------------------------------
+
+**Notebook:**
+
+```
+03_GTEx_SNP_Tissue_Profile_UPSet.ipynb
+```
 
 This notebook defines the tissue-specific expression profile of the selected independent SNPs.
 
