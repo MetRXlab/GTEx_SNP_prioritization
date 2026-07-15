@@ -2,7 +2,7 @@
 
 This folder contains the workflow for GTEx eQTL SNP prioritization, including variant filtering, allele alignment, PLINK2 LD clumping, and Sankey visualization. The analysis identifies independent regulatory variants and evaluates their tissue-specific gene expression effects using GTEx data.
 
-## GTEx eQTL Analysis Pipeline
+### Analysis Pipeline
 
 This repository contains the workflow used to retrieve, select, and characterize GTEx v8 eQTL variants for candidate genes **CALCA, CALCB, and CALCRL**.
 
@@ -10,7 +10,7 @@ The pipeline consists of three main steps:
 
 ---
 
-## 1. GTEx eQTL Retrieval (R)
+### 1. GTEx eQTL Retrieval (R)
 
 **File:**
 
@@ -19,7 +19,7 @@ The pipeline consists of three main steps:
 ```
 This script retrieves significant tissue-specific eQTL associations from the **GTEx v8 database** using the `gtexr` R package.
 
-### Main steps:
+#### Main steps:
 
 - Queries GTEx v8 for significant single-tissue eQTLs
 - Retrieves variant–gene associations for selected genes
@@ -43,7 +43,7 @@ data/
 
 ---
 
-## 2. SNP Selection and LD Clumping (Python)
+### 2. SNP Selection and LD Clumping (Python)
 
 **Notebook:**
 
@@ -55,7 +55,7 @@ data/
 
 This notebook processes GTEx eQTL results and identifies independent regulatory variants.
 
-### Main steps:
+#### Main steps:
 
 - Imports GTEx eQTL results generated from the R script
 - Retrieves additional SNP–tissue associations from the GTEx API
@@ -85,7 +85,7 @@ The Sankey visualization provides an overview of how independent eQTL variants a
 
 ---
 
-## 3. Tissue-Specific eQTL Expression Profiles (Python)
+### 3. Tissue-Specific eQTL Expression Profiles (Python)
 
 **Notebook:**
 
@@ -95,7 +95,7 @@ The Sankey visualization provides an overview of how independent eQTL variants a
 
 This notebook defines the tissue-specific expression profile of the selected independent SNPs.
 
-### Main steps:
+#### Main steps:
 
 - Imports LD-clumped SNPs
 - Queries GTEx v8 for SNP–tissue associations
@@ -141,7 +141,7 @@ GTEx gene identifiers
 
 # Requirements
 
-## R
+### R
 
 Required package:
 
@@ -150,7 +150,7 @@ install.packages("remotes")
 remotes::install_github("ropensci/gtexr")
 ```
 
-## Python
+### Python
 
 Required packages:
 
@@ -162,7 +162,7 @@ plotly
 statsmodels
 ```
 
-## External tools
+### External tools
 
 - GTEx v8 Portal API
 - PLINK2
