@@ -1,4 +1,8 @@
-# GTEx eQTL Analysis Pipeline
+## GTEx SNP Prioritization
+
+This folder contains the workflow for GTEx eQTL SNP prioritization, including variant filtering, allele alignment, PLINK2 LD clumping, and Sankey visualization. The analysis identifies independent regulatory variants and evaluates their tissue-specific gene expression effects using GTEx data.
+
+## GTEx eQTL Analysis Pipeline
 
 This repository contains the workflow used to retrieve, select, and characterize GTEx v8 eQTL variants for candidate genes **CALCA, CALCB, and CALCRL**.
 
